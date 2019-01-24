@@ -1,0 +1,22 @@
+1.Open Git Bash:
+
+  bash here
+  
+2.Clone your fork:
+
+  git clone https://github.com/kangris-sket/appinventor-sources.git
+
+3.Add remote from original repository in your forked repository:
+
+  cd appinventor-sources
+  git remote add upstream https://github.com/mit-cml/appinventor-sources.git
+  cp sample-.gitignore .gitignore
+  git submodule update --init
+  git fetch upstream
+  git checkout master
+  
+4.Updating your fork from original repo to keep up with their changes:
+
+  git pull upstream master
+          or
+  git merge upstream/master
